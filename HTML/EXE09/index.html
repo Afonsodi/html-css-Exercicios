@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas / Audio / Video</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir as imagens em diversos dispositivos ou aumente e diminuia o tamanho da janela do navegador</p>
+    
+    <picture>
+        <source media="(max-width: 750px" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/M.png" type="image/png">
+       <img src="imagens/G.png" alt="Imagem Flexivel">
+    </picture>
+   <hr>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a inserir <B style="color:red ;">audio</B> no site</p>
+    <audio src="midia/Boom Bap Flick - Quincas Moreira.mp3"  controls autoplay>play</audio>  <!--inserir tag audio + controls autoplay pode-se usar Loop para manter tocando-->
+
+    <!--Ou-->
+    <!--Software para converter video HANDBRAKE (PC)-->
+    <!--Quanto maior a qualidade de resolução maior é o custo a ser pago R$-->
+
+    <!--source src="midia/Boom Bap Flick - Quincas Moreira.mp3" type="audio/mpeg"-->
+    <!--source src="midia/Boom Bap Flick - Quincas Moreira.wav" type="audio/wav"-->
+    <!--source src="midia/Boom Bap Flick - Quincas Moreira.ogg" type="audio/ogg"-->
+    <hr>
+    <h1>Inserindo videos</h1>
+    <p>vamos aprender a inserir <B style="color:red;">video</B> no site</p>
+    <!--video src="midia/WhatsApp Video 2022-11-30 at 16.42.37.mp4" width="500"  controls></!video-->
+
+    <video controls width="500">
+        <source src="midia/WhatsApp Video 2022-11-30 at 16.42.37.mp4" type="video/mp4">
+        <source src="midia/WhatsApp Video 2022-11-30 at 16.42.37.m4v" type="video/m4v">
+        <source src="midia/WhatsApp Video 2022-11-30 at 16.42.37.webm" type="video/webm">
+        <source src="midia/WhatsApp Video 2022-11-30 at 16.42.37.ogv" type="video/ogg">
+
+    </video>
+    <!--INSERIR OS SOURCE NA ORDEM QUE DESEJA QUE O NAVEGADOR CARREGUE-->
+    <!--INSERIR OS SOURCE POIS EM ALGUNS NAVEGADORES NÃO POSSUEM COMPATIBILIDADE COM ALGUNS TIPOS DE ARQUIVOS mp3.mp4.etc-->
+    <!--VIDEOS HOSPEDADOS NO PROPRIO SERVIDOR CONSOMEM MAIS DADOS DE BANDA-->
+
+<p>Uma forma para inserir videos,sem que haja o consumo de dados em site/servidor é pegar de outras fontes em que o video esteja hospedado como por exemplo o YOUTUBE ; VIMEO ;FACEBOOK </p>
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V-8UxkWTPtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Party day';
+    src: url('/PartyDayDemoRegular.ttf') format('truetype'), url('/PartyDayDemoRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body { background-image:linear-gradient(to right , #732634, #8C2641 ,#FAACC4);}
+
+main { margin: auto;
+       padding: 10px;
+       width: 600px;
+       border-radius: 10px;
+       background-color: white;
+       
+       
+    }
+h1 {color: #8C2641;
+    font-family: 'Party day';
+
+}
+p {color: black;
+
+}

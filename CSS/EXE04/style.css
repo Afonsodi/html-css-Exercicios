@@ -1,0 +1,23 @@
+* {}
+
+body { background-image: linear-gradient(to right ,red,#BD2A2E,black);}
+
+main {
+    padding: 10px;
+    margin: auto;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gold;
+}
+p {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    ;
+text-align: justify;}

@@ -1,0 +1,25 @@
+body { 
+    background-image :linear-gradient(to right , #732634, #8C2641 ,#FAACC4);
+}
+
+main {
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: #732634;
+
+}
+
+h1#principal {
+    text-align: center;
+    color: black;
+}
+
+h1 {color: red;}
+
+h2 {color: red;}
+
+p {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: justify;}
