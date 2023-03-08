@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela vertical grande</title>
+
+    <style>
+
+        /*ANATOMIA PARA TABELAS GRANDES
+        
+        TABLE
+            CAPTION -> LEGENDA/TITULO DA TABELA
+            
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        
+        */
+
+
+           body {background-image: url(imagens/wallpaper002.jpg);
+
+           }
+
+           table{ width: 400px;
+            border: none;
+            margin: auto;
+            border-collapse:separate;
+            padding: 30px;
+            position: relative;}
+            
+
+
+            tr{
+                
+                padding: 20px;
+              
+            }
+
+            tbody > tr:nth-child(2n) {
+                background-color: rgb(245, 243, 243);
+            }
+
+            thead> tr> th { 
+                position: sticky;
+                top: -1px;
+                background-color: black;
+            }
+
+            td{
+                
+                padding: 8px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.653);
+                border-radius: 20px;
+                
+                 
+            }
+
+            td:hover{
+                background-color: blue;
+            }
+
+            td.numero {
+                text-align: end;
+                margin-bottom: 10px;
+            }
+
+            #total{
+                background-color: yellow;
+                color: black;
+               
+            }
+
+            #total:hover {
+                background-color: blue;
+                color:white;
+                
+            }
+
+            th{
+                padding: 8px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.653);
+                border-radius: 20px;
+            }
+
+            th:hover {
+                background-color: blue;
+                color:white;
+            }
+
+            caption{
+                padding: 8px;
+                color: white;
+                background-color: rgb(0, 0, 0);
+                border-radius: 20px ;
+                
+            }
+
+            #titulo{
+                background-color: black;
+            }
+
+
+</style>
+</head>
+<body>
+    <table>
+
+        <caption>
+            População dos estados Brasileiros
+        </caption>
+        <thead >
+            <tr id="titulo">
+                <th scope="col"> Estado</th>
+                <th scope="col">População</th>
+            </th>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th class="numero" id="total">134.009.488</th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">41.262.199</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">19.597.330</td>
+            </tr>
+
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">15.989.929</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.016.906</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10.693.929</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">10.444.526</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">8.796.448</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8.452.381</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="numero">7.581.051</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6.574.789</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">8.796.448</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8.452.381</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="numero">7.581.051</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6.574.789</td>
+            </tr>
+           
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">41.262.199</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">19.597.330</td>
+            </tr>
+
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="numero">15.989.929</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.016.906</td>
+            </tr>
+        </tbody>
+
+
+
+
+
+    </table>
+</body>
+</html>
