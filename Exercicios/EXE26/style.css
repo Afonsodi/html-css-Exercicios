@@ -1,0 +1,47 @@
+td {width: 100px;
+    border: 1px solid  black;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(102, 100, 100);
+    color:white;
+    width: 100px;
+
+}
+
+td{
+    border: 1px solid black;
+}
+
+td.nota{
+    text-align: center;
+}
+
+#Exatas {
+    text-align: center;
+        
+}
+
+#Média {
+    background-color: rgb(90, 89, 89);
+    color: white;
+}
+
+col.cMedia {
+    background-color: rgba(128, 128, 128, 0.582);
+   
+}
+
+col.cDisciplinas {
+    background-color: rgba(128, 128, 128, 0.589);
+    
+}

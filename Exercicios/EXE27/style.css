@@ -1,0 +1,22 @@
+div {
+    overflow: auto;
+}
+
+div > table {
+    margin:auto;
+    border-collapse: collapse;
+   
+}
+
+div th {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+}
+
+div td {
+    border: 1px solid black;
+    padding: 10px;
+    
+}

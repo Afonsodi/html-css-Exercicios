@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup personalização</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cÁrea">
+            <col class="cDisciplinas">
+            <col class="cNotas">
+            <col class="cMedia">
+        </colgroup>
+
+        <caption>
+            Tabela escolar
+        </caption>
+
+        <thead>
+            <tr>
+                <th  scope="col" rowspan="2"><strong>Área</strong></th>
+                <th scope="col" rowspan="2"><strong>Disciplinas</strong></th>
+                <th  scope="col" colspan="2"><strong>Notas</strong></th> 
+                
+                <th  scope="col" rowspan="2"><strong>Media</strong></th>
+            </tr>
+
+            <tr>
+                
+                <th scope="col" >Notas 1</th> 
+                <th scope="col">Notas 2</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td scope="colgroup" rowspan="4" id="Exatas"><strong>Exatas</strong></td>
+                
+                <td scope="colgroup">Matemática</td>
+                <td scope="colgroup" class="nota">7.0</td>
+                <td scope="colgroup" class="nota">8.0</td>
+                <td scope="colgroup" class="nota">8.5</td>
+            </tr>
+
+                <tr>
+                    <td scope="colgroup">Física</td>
+                    <td scope="colgroup" class="nota">7.0</td>
+                    <td scope="colgroup" class="nota">8.0</td>
+                    <td scope="colgroup" class="nota">8.5</td>
+                </tr>
+
+                <tr>
+                    <td scope="colgroup" >Química</td>
+                    <td scope="colgroup" class="nota">10.0</td>
+                    <td scope="colgroup" class="nota">9.0</td>
+                    <td scope="colgroup" class="nota">9.0</td>
+                </tr>
+
+                <tr>
+                    <td scope="colgroup">Biologia</td>
+                    <td scope="colgroup" class="nota">9.0</td>
+                    <td scope="colgroup" class="nota">8.0</td>
+                    <td scope="colgroup" class="nota">8.0</td>
+    </table>
+</body>
+</html>
