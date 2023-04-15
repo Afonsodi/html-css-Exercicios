@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação com css</title>
+    <style>
+        @keyframes avião {
+
+            0% {
+                transform: translateX(0);
+               
+            }
+
+            50% {
+                transform: translateX(1000px);
+            }
+
+            100% {
+            transform:translateX(0);
+            
+            }
+
+
+        }
+
+        @keyframes nuvem {
+
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+            transform: translateX(0);
+            }
+
+            100% {
+            transform: translateX(1500px);
+            }
+            }
+
+            @keyframes Rotação {
+
+            0% {
+                transform:rotate(0deg);
+            }
+
+           
+
+            100% {
+                transform:rotate(-360deg);
+            }
+            }
+
+
+
+        
+
+        body{
+            background-color: blue;
+           
+            
+            }
+
+
+            #nuvem1 {
+               
+                position: relative;
+                top:5% ;
+                left: 10%;
+                right: 50%;
+                
+                width: 100px;
+                 height:100px;
+                /* animation: nuvem 5s infinite;*/
+
+            }
+
+            #avião1 {
+                position: absolute;
+                top: 30%; 
+                
+                left: 10%;
+                right: 50%;
+              
+                width: 200px;
+                 height:100px;
+                  /*animation:avião 10s ease infinite;*/
+                  animation: Rotação 10s linear infinite;
+                 transform: scale(1);
+                 
+            }
+
+    </style>
+
+</head>
+<body>
+    <img src="imagens/cloud.png" alt="cloud" id="nuvem1">
+    <img src="imagens/Clip-Art-Avião-PNG.png" alt="avião" id="avião1">
+</body>
+</html>
